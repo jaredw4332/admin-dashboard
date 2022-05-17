@@ -1,0 +1,29 @@
+li {
+    list-style-type: none;
+}
+
+#container {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+#sidebar {
+    background-color: red;
+    grid-area: 1 / 1 / 4 / 1;
+}
+
+#header {
+    background-color: aqua;
+    grid-area: 1 / 2 / 1 / 4;
+}
+
+#main {
+    background-color: yellowgreen;
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+.article {
+    border-style: double;
+}
