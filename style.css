@@ -9,21 +9,35 @@ li {
     grid-template-rows: 1fr 2fr 2fr;
 }
 
+/* SIDEBAR SECTION */
+
 #sidebar {
     background-color: red;
     grid-area: 1 / 1 / 4 / 1;
+    justify-content: center;
 }
+
+/* HEADER SECTION */
 
 #header {
     background-color: aqua;
     grid-area: 1 / 2 / 1 / 4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+/* MAIN BODY SECTION */
 
 #main {
     background-color: yellowgreen;
     grid-area: 2 / 2 / 4 / 4;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 200px;
 }
 
-.article {
-    border-style: double;
+#mainMain {
+    grid-row: 1 / 3;
 }
