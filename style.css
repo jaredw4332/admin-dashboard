@@ -1,26 +1,70 @@
+@font-face {
+    font-family: 'Major Mono Display';
+    src: url('media/MajorMonoDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Vazirmatn', sans-serif;
+    src: url('media/Vazirmatn-VariableFont_wght.ttf');
+}
+
 li {
     list-style-type: none;
 }
 
 #container {
-    background-color: blueviolet;
+    font-family: 'Vazirmatn', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
+    margin: -10px;
+    color: #4c1b27;
 }
 
 /* SIDEBAR SECTION */
 
 #sidebar {
-    background-color: red;
+    background-color: #18992B;
     grid-area: 1 / 1 / 4 / 1;
-    justify-content: center;
+}
+
+#alien {
+    height: clamp(30px, 40px, 50px);
+    width: clamp(30px, 40px, 50px);
+}
+
+#logo {
+    font-family: 'Major Mono Display';
+    font-size: clamp(30px, 40px, 60px);
+    font-weight: 600;
+    margin-left: clamp(5px, 1vw, 40px);
+    margin-right: max(5px, 1vw);
+    color: #4c1b27;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    margin-top: 60px;
+}
+
+.menu > *:hover {
+    text-decoration: underline 2px;
+    cursor: pointer;
+}
+
+.menu > * {
+    color: #4c1b27;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* HEADER SECTION */
 
 #header {
-    background-color: aqua;
+    background-color: #1C4D22;
     grid-area: 1 / 2 / 1 / 4;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -30,14 +74,31 @@ li {
 /* MAIN BODY SECTION */
 
 #main {
-    background-color: yellowgreen;
+    background-color: #992844;
     grid-area: 2 / 2 / 4 / 4;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 200px;
+    gap: 20px;
 }
 
 #mainMain {
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#mainSideTop, #mainSideBottom{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.article {
+    background-color: #99465B;
+    margin: 10px;
+}
+
+.sideContent {
+    background-color: #99465B;
 }
