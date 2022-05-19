@@ -100,6 +100,7 @@ li {
 #mainSideTop, #mainSideBottom { 
     display: grid;
     grid-template-rows: minmax(50px, 5vh) repeat(auto-fit, minmax(50px, 1fr));
+    padding-right: 10%;
 }
 
 #mainSideTop > div:first-of-type, #mainSideBottom > div:first-of-type {
@@ -120,9 +121,8 @@ li {
     border-left: 8px;
     border-color: #18992B;
     border-style: solid;
-    overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    overflow: hidden;
     grid-template-rows: 1fr 3fr 1fr;
 }
 
@@ -131,12 +131,16 @@ li {
     font-size: 18px;
 }
 
+.articleTitle:hover, .sideTitle:hover {
+    text-decoration: underline 2px;
+    cursor: pointer;
+}
+
 .articleText {
-    grid-area: 2 / 1 / 3 / 3;
+    overflow: hidden;
 }
 
 .articleIconContainer {
-    grid-area: 3 / 1 / 3 / 3;
     width: fit-content;
     justify-self: end;
 }
@@ -163,13 +167,30 @@ li {
     margin-top: 0px;
 }
 
-.sideContent {
-    background-color: #99465B;
-    padding: 6px;
-    padding-bottom: 0px;
-}
-
 .sectionTitle {
     font-weight: bold;
     font-size: 20px;
+}
+
+.sideContent {
+    background-color: #99465B;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.sideTitle {
+    font-weight: bold;
+}
+
+.sideText {
+    font-size: 14px;
+}
+
+#mainSideTop > div:nth-of-type(2) {
+    border-style: solid none solid none;
+    border-width: 1px;
+}
+
+#mainSideBottom {
+    padding-bottom: 10px;
 }
