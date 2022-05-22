@@ -106,6 +106,8 @@ li {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
     font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 #userGreetingGreeting {
@@ -120,8 +122,16 @@ li {
 }
 
 #searchBarBox {
-    align-self: center;
-    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#searchBar {
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: #99465B;
+    width: 100%;
 }
 
 #userCorner {
@@ -152,8 +162,6 @@ li {
     width: max(65px, 5vw);
     height: max(65px, 5vw);
     margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
 }
 
 /* MAIN BODY SECTION */
