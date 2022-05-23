@@ -148,6 +148,10 @@ li {
     border-style: none;
 }
 
+#searchBar:focus {
+    outline: none;
+}
+
 #userCorner {
     display: flex;
     align-items: center;
@@ -249,6 +253,7 @@ li {
     display: grid;
     overflow: hidden;
     grid-template-rows: 1fr 3fr 1fr;
+    box-shadow: 4px 4px 4px #e4b7bc;
 }
 
 .article:hover {
@@ -261,7 +266,7 @@ li {
     font-size: 18px;
 }
 
-.articleTitle:hover, .sideTitle:hover {
+.articleTitle:hover, .sideTitle:hover, .trendingName:hover {
     text-decoration: underline 2px;
     cursor: pointer;
 }
@@ -307,6 +312,7 @@ li {
 
 .sideContent {
     background-color: #fff1f2;
+    box-shadow: 4px 4px 4px #e4b7bc;
 }
 
 .sideTop{
